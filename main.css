@@ -1,10 +1,12 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(6, 150px);
+  grid-template-columns: repeat(3, 150px);
   grid-template-rows: repeat(4, 150px);
-  align-items: center;
-  background: no-repeat url(https://codeberry-curriculum-assets.s3.eu-central-1.amazonaws.com/advanced-css-course/1.+a-css-c-3-4-grid.png);
+  justify-content: space-between;
   grid-gap: 10px;
+  background-color: #3e2723;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .item {
@@ -29,4 +31,12 @@
 
 .item-4 {
   background-color: blue;
+}
+
+.item-5 {
+  background-color: brown;
+}
+
+.item-6 {
+  background-color: gray;
 }
