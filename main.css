@@ -1,11 +1,16 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, minmax(100px, auto));
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, minmax(100px, auto));
   grid-gap: 10px;
   background-color: #3e2723;
   padding: 10px;
   border-radius: 10px;
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "main main . sidebar"
+    "footer footer footer footer";
 }
 
 .item {
@@ -19,7 +24,7 @@
 }
 
 .header {
-  grid-column: span 12;
+  grid-area: header;
   padding: 20px;
   background-color: #ffffff;
   font-size: 40px;
@@ -27,17 +32,15 @@
 }
 
 .main {
-  grid-column: 2 / span 6;
-  grid-row: 2 / span 10;
+  grid-area: main;
 }
 
 .sidebar {
-  grid-column: span 4;
-  grid-row: 2 /span 8;
+  grid-area: sidebar;
 }
 
 .footer {
-  grid-column: span 12;
+  grid-area: footer;
   padding: 20px;
   background-color: #000000;
   font-size: 40px;
