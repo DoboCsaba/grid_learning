@@ -15,21 +15,21 @@
 }
 
 .item-1 {
-  align-self: start;
+  place-self: start start;
   background-color: orange;
 }
 
 .item-2 {
-  align-self: center;
+  place-self: center stretch;
   background-color: red;
 }
 
 .item-3 {
-  align-self: stretch;
+  place-self: start end;
   background-color: green;
 }
 
 .item-4 {
-  align-self: end;
+  place-self: center end;
   background-color: blue;
 }
